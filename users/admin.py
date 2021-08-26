@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import UserFollowing
+from .models import UserFollowing, Profile
 # Register your models here.
 
 class PostAdmin(admin.ModelAdmin):
@@ -11,4 +11,5 @@ class UserFollowingAdmin(admin.ModelAdmin):
 
 #register flight with flightadmin settings
 admin.site.register(UserFollowing)
+admin.site.register(Profile)
 
